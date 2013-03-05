@@ -25,7 +25,7 @@ public class IconResizer {
 	private JTextField folderPath;
 	private JButton folderButton;
 
-	private final String WEB_URL = "http://wireshock.com/";
+	private final String WEB_URL = "http://wireshock.com/android-icon-resizer/";
 	private final String DONATE_LINK = "https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=TsJY3Q-Kiw0dn7H3jdp_MvUVAdzQMf7lpM4o4vovX01EOoxSzqA6e2yHviO&dispatch=5885d80a13c0db1f8e263663d3faee8dd75b1e1ec3ad97b7af62835dd81d5d52";
 
 	/**
