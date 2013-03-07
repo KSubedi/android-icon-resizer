@@ -74,8 +74,10 @@ public class IconResizer {
 				fileChooser.addChoosableFileFilter(new FileNameExtensionFilter(
 						"PNG Icon", "png"));
 				fileChooser.setDialogTitle("Choose PNG Icon To Open");
-				fileChooser.showOpenDialog(fileChooser);
-				filePath.setText(fileChooser.getSelectedFile().toString());
+				int returnVal = fileChooser.showOpenDialog(fileChooser);
+				if (returnVal == JFileChooser.APPROVE_OPTION) {
+					filePath.setText(fileChooser.getSelectedFile().toString());
+				}
 			}
 		});
 		fileButton.setBounds(227, 52, 74, 29);
@@ -95,8 +97,11 @@ public class IconResizer {
 						.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 				folderChooser
 						.setDialogTitle("Choose Your Android App Res Folder");
-				folderChooser.showOpenDialog(folderChooser);
-				folderPath.setText(folderChooser.getSelectedFile().toString());
+				int returnVal = folderChooser.showOpenDialog(folderChooser);
+				if (returnVal == JFileChooser.APPROVE_OPTION) {
+					folderPath.setText(folderChooser.getSelectedFile()
+							.toString());
+				}
 			}
 		});
 		folderButton.setBounds(227, 118, 74, 29);
